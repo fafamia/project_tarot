@@ -1,0 +1,176 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.letter-spacing-l {
+    letter-spacing: 20%;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+
+.btn {
+    background-color: $color-primary;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.3rem;
+
+    &:hover {
+        background-color: $dark-primary;
+    }
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.flex-order-1 {
+    order: -1;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.l-product-list {
+    a {
+        &:hover {
+            img {
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+    }
+
+    .l-card-product {
+        border: 1px solid $color-lightgray;
+        border-radius: 10px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+
+        .l-card-pic {
+            height: 180px;
+            // overflow: hidden;
+            border-radius: 10px 10px 0 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: middle;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        .l-card-text {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+
+            h3 {
+                font-size: $text-s;
+            }
+
+            :nth-child(2) {
+                color: $color-darkgray;
+                flex-grow: 1;
+            }
+
+            :last-child {
+                font-size: $text-s;
+                font-weight: bold;
+            }
+        }
+
+        button {
+            font-size: 30px;
+            color: $color-lightgray;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: transparent;
+            border: none;
+
+            &:hover {
+                color: $color-primary;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.pagination {
+    text-align: center;
+    font-size: $text-m;
+
+    a {
+        padding: 0 6px;
+        border-radius: 5px;
+    }
+
+    .num-btn,
+    .next {
+        &:hover {
+            color: #fff;
+            background-color: $color-primary;
+        }
+
+    }
+
+    .arrow-btn {
+        border: 1px solid $color-lightgray;
+        color: $color-lightgray;
+    }
+
+    .next {
+        color: $color-primary;
+    }
+
+    .stop {
+        cursor: default;
+    }
+}

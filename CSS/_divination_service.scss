@@ -1,0 +1,36 @@
+.divination-card-p {
+    align-items: center;
+
+    .divination-card-img-p {
+        height: 520px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .divination-card-text-p {
+        text-align: center;
+        padding: 0 20px;
+
+        h3 {
+            font-size: $text-xxl;
+        }
+
+        p {
+            font-size: $text-m;
+        }
+
+        .more {
+
+            a {
+                color: #fff;
+                font-size: $text-m;
+            }
+        }
+    }
+}

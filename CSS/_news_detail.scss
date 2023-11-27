@@ -1,0 +1,21 @@
+.news-area {
+    h2 {
+        font-size: $text-xl;
+    }
+
+    time {
+        display: block;
+        color: $color-50black;
+    }
+
+    .news-img {
+        text-align: center;
+
+        img {
+            vertical-align: middle;
+            object-fit: cover;
+            width: 66.6666%;
+            height: 300px;
+        }
+    }
+}

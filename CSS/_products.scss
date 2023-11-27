@@ -1,0 +1,22 @@
+.class-products {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-lightgray;
+
+    h2 {
+        font-size: $text-title;
+    }
+
+    .class-list {
+        a {
+            font-size: $text-s;
+            padding: 0.375rem 0.75rem;
+            border: 1px solid $color-lightgray;
+            border-radius: 5px;
+
+            &:hover {
+                color: $light-primary;
+                background-color: lighten($color-lightgray, 15%);
+            }
+        }
+    }
+}

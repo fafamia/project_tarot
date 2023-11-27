@@ -1,0 +1,40 @@
+.article-card {
+    a {
+        &:hover {
+            h2 {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.article-card-pic {
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+}
+
+.article-card-text {
+    h2 {
+        font-size: $text-m;
+    }
+
+    p {
+        font-size: $text-s;
+    }
+
+    time {
+        color: $color-50black;
+    }
+}
+
+
+
+.object-top {
+    object-position: top;
+}
