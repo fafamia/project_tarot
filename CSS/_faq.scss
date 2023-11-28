@@ -1,0 +1,92 @@
+.faq {
+    h2 {
+        font-size: $text-xl;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $color-lightgray;
+    }
+
+    .question-item {
+        font-size: $text-s;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $color-lightgray;
+        flex-wrap: wrap;
+        row-gap: 20px;
+
+        h3 {
+            width: calc(100% - 22px);
+        }
+
+        input {
+            display: none;
+        }
+
+        .answer-text {
+            width: 100%;
+            padding: 20px;
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            line-height: 2;
+            display: none;
+        }
+
+        .change-icon {
+            display: none;
+        }
+
+        #open-text:checked~.answer-text,
+        #open-text2:checked~.answer-text,
+        #open-text3:checked~.answer-text,
+        #open-text4:checked~.answer-text,
+        #open-text5:checked~.answer-text,
+        #open-text6:checked~.answer-text,
+        #open-text7:checked~.answer-text,
+        #open-text8:checked~.answer-text,
+        #open-text9:checked~.answer-text,
+        #open-text10:checked~.answer-text,
+        #open-text11:checked~.answer-text,
+        #open-text12:checked~.answer-text,
+        #open-text13:checked~.answer-text,
+        #open-text14:checked~.answer-text,
+        #open-text15:checked~.answer-text {
+            display: block;
+        }
+
+        #open-text:checked~.change-icon,
+        #open-text2:checked~.change-icon,
+        #open-text3:checked~.change-icon,
+        #open-text4:checked~.change-icon,
+        #open-text5:checked~.change-icon,
+        #open-text6:checked~.change-icon,
+        #open-text7:checked~.change-icon,
+        #open-text8:checked~.change-icon,
+        #open-text9:checked~.change-icon,
+        #open-text10:checked~.change-icon,
+        #open-text11:checked~.change-icon,
+        #open-text12:checked~.change-icon,
+        #open-text13:checked~.change-icon,
+        #open-text14:checked~.change-icon,
+        #open-text15:checked~.change-icon {
+            display: block;
+        }
+
+        #open-text:checked~.change-icon-down,
+        #open-text2:checked~.change-icon-down,
+        #open-text3:checked~.change-icon-down,
+        #open-text4:checked~.change-icon-down,
+        #open-text5:checked~.change-icon-down,
+        #open-text6:checked~.change-icon-down,
+        #open-text7:checked~.change-icon-down,
+        #open-text8:checked~.change-icon-down,
+        #open-text9:checked~.change-icon-down,
+        #open-text10:checked~.change-icon-down,
+        #open-text11:checked~.change-icon-down,
+        #open-text12:checked~.change-icon-down,
+        #open-text13:checked~.change-icon-down,
+        #open-text14:checked~.change-icon-down,
+        #open-text15:checked~.change-icon-down {
+            display: none;
+        }
+    }
+}
