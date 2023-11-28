@@ -652,12 +652,133 @@ header .header .logo h1 {
 .menu-list .log-in {
   color: #AE3257;
   font-weight: bold;
+  cursor: pointer;
 }
 .menu-list .log-in:hover {
   color: #862743;
 }
 .menu-list .sign-up {
   color: #fff;
+  cursor: pointer;
+}
+
+#login {
+  display: none;
+}
+
+#signup {
+  display: none;
+}
+
+.modal-bg {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modal-bg .modal {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-text {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+}
+.member-text h3 {
+  font-size: 20px;
+}
+.member-text .close {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+.member-text .close:hover {
+  color: #AE3257;
+}
+.member-text input:not(.keep-login) {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #898989;
+  border-radius: 5px;
+  outline: none;
+}
+.member-text .password {
+  position: relative;
+}
+.member-text .password .eye {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.member-text .check-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.member-text .check-num input {
+  width: 60%;
+}
+.member-text .check-num .num {
+  font-size: 28px;
+  background-color: rgba(217, 217, 217, 0.51);
+  font-family: "Gloria Hallelujah", cursive;
+  padding: 10px 20px;
+}
+.member-text .check-num a i {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.member-text .member-btn {
+  display: block;
+  text-align: center;
+  background-color: #AE3257;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.member-text .member-btn:hover {
+  background-color: #862743;
+}
+.member-text h4 {
+  border-top: 1px solid #cacaca;
+  padding-top: 8px;
+}
+.member-text .fast-img {
+  display: flex;
+  justify-content: space-between;
+}
+.member-text .fast-img img {
+  width: 60px;
+  height: 60px;
+}
+.member-text .bottom-btn {
+  text-align: center;
+}
+.member-text .bottom-btn a:hover {
+  color: #AE3257;
+}
+
+#login:checked ~ .log-in-modal {
+  display: block;
+}
+
+#signup:checked ~ .sign-up-modal {
+  display: block;
 }
 
 footer {
@@ -735,6 +856,8 @@ footer .footer-area h2 {
 .copyright {
   border-top: 1px solid #898989;
   text-align: center;
+  padding: 5px;
+  font-size: 14px;
 }
 
 .banner-title {
@@ -925,11 +1048,12 @@ footer .footer-area h2 {
   font-size: 24px;
 }
 .divination-card .divination-card-text .more {
-  text-align: right;
+  text-align: center;
 }
 .divination-card .divination-card-text .more a {
   color: #fff;
   font-size: 24px;
+  padding: 10px 40px;
 }
 
 .team {

@@ -42,6 +42,7 @@ header {
     .log-in {
         color: $color-primary;
         font-weight: bold;
+        cursor: pointer;
 
         &:hover {
             color: $dark-primary;
@@ -50,8 +51,149 @@ header {
 
     .sign-up {
         color: #fff;
+        cursor: pointer;
     }
 }
+
+#login {
+    display: none;
+}
+
+#signup {
+    display: none;
+}
+
+.modal-bg {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .modal {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.member-text {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+
+    h3 {
+        font-size: $text-s;
+    }
+
+    .close {
+        font-size: $text-m;
+        color: rgba(0, 0, 0, 0.70);
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    input:not(.keep-login) {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $color-gray;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .password {
+        position: relative;
+
+        .eye {
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            color: rgba(0, 0, 0, 0.70);
+        }
+    }
+
+    .check-num {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 60%;
+        }
+
+        .num {
+            font-size: $text-l;
+            background-color: rgba(217, 217, 217, 0.51);
+            font-family: 'Gloria Hallelujah', cursive;
+            padding: 10px 20px;
+        }
+
+        a i {
+            font-size: $text-m;
+            color: rgba(0, 0, 0, 0.70);
+        }
+    }
+
+    .member-btn {
+        display: block;
+        text-align: center;
+        background-color: $color-primary;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $dark-primary;
+        }
+    }
+
+    h4 {
+        border-top: 1px solid $color-lightgray;
+        padding-top: 8px;
+    }
+
+    .fast-img {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .bottom-btn {
+        text-align: center;
+
+        a {
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+#login:checked~.log-in-modal {
+    display: block;
+}
+
+#signup:checked~.sign-up-modal {
+    display: block;
+}
+
 
 footer {
     background-color: $color-secondary;
@@ -145,6 +287,8 @@ footer {
 .copyright {
     border-top: 1px solid $color-gray;
     text-align: center;
+    padding: 5px;
+    font-size: 14px;
 }
 
 .banner-title {

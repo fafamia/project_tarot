@@ -194,11 +194,12 @@
         }
 
         .more {
-            text-align: right;
+            text-align: center;
 
             a {
                 color: #fff;
                 font-size: $text-m;
+                padding: 10px 40px;
             }
         }
     }

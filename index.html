@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -17,6 +17,8 @@
 </head>
 
 <body>
+    <input type="checkbox" id="login">
+    <input type="checkbox" id="signup">
     <header>
         <div class="header container">
             <div class="logo">
@@ -34,13 +36,78 @@
                     <li class="mr-16"><a href="team.html">團隊介紹</a></li>
                     <li class="mr-16"><a href="news.html">最新消息</a></li>
                     <li class="mr-16"><a href="faq.html">常見問題</a></li>
-                    <li class="mr-16"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li class="mr-16"><a href="#" class="log-in">登入</a></li>
-                    <li><a href="#" class="btn sign-up">免費註冊</a></li>
+                    <li class="mr-16"><a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="mr-16"><label for="login" class="log-in">登入</label></li>
+                    <li><label for="signup" class="btn sign-up">免費註冊</label></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="modal-bg log-in-modal">
+        <div class="modal">
+            <div class="member-text">
+                <h3 class="mb-8">會員登入</h3>
+                <label for="login" class="close"><i class="fa-solid fa-xmark"></i></label>
+                <input class="mb-20" type="email" placeholder="請輸入E-mail" required>
+                <div class="password mb-20">
+                    <input type="password" placeholder="請輸入密碼" required>
+                    <span class="eye"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="check-num mb-20">
+                    <input type="text" placeholder="請輸入右側驗證碼" required><span class="num">5566</span><a href="#"><i
+                            class="fa-solid fa-rotate-right"></i></a>
+                </div>
+                <a href="#" class="member-btn mb-8">登入</a>
+                <input class="keep-login mb-20" type="checkbox" id="keep-log-in"><label for="keep-log-in">保持登入狀態</label>
+                <div class="orther-way">
+                    <h4 class="mb-20">或其他方式快速登入</h4>
+                    <div class="fast-img mb-20">
+                        <a href="#"><img src="imgs/facebook.png" alt="facebook_login"></a>
+                        <a href="#"><img src="imgs/google.png" alt="google_login"></a>
+                        <a href="#"><img src="imgs/line.png" alt="line_login"></a>
+                        <a href="#"><img src="imgs/instagram.png" alt="instagram_login"></a>
+                    </div>
+                </div>
+                <div class="bottom-btn">
+                    <a href="#">免費註冊</a>
+                    <span> | </span>
+                    <a href="#">忘記密碼</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-bg sign-up-modal">
+        <div class="modal">
+            <div class="member-text">
+                <h3 class="mb-8">會員註冊</h3>
+                <label for="signup" class="close"><i class="fa-solid fa-xmark"></i></label>
+                <input class="mb-20" type="email" placeholder="請輸入E-mail" required>
+                <div class="password mb-20">
+                    <input type="password" placeholder="請輸入密碼(6-20碼，英數字特殊符號組成)" required>
+                    <span class="eye"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="password mb-20">
+                    <input type="password" placeholder="請再次確認密碼" required>
+                    <span class="eye"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="check-num mb-20">
+                    <input type="text" placeholder="請輸入右側驗證碼" required><span class="num">5566</span><a href="#"><i
+                            class="fa-solid fa-rotate-right"></i></a>
+                </div>
+                <a href="#" class="member-btn mb-20">註冊</a>
+                <div class="orther-way">
+                    <h4 class="mb-20">或其他方式快速註冊</h4>
+                    <div class="fast-img">
+                        <a href="#"><img src="imgs/facebook.png" alt="facebook_login"></a>
+                        <a href="#"><img src="imgs/google.png" alt="google_login"></a>
+                        <a href="#"><img src="imgs/line.png" alt="line_login"></a>
+                        <a href="#"><img src="imgs/instagram.png" alt="instagram_login"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="banner">
             <div class="container">
@@ -125,7 +192,7 @@
                         <div class="divination-card-text col-12 col-md-6 padding-0">
                             <h3 class="mb-20">1對1塔羅占卜</h3>
                             <p class="mb-20">專業指導，解答疑問，啟發靈性成長。個人指導，探索未知之路。</p>
-                            <div class="more"><a href="#" class="btn">立即預約</a></div>
+                            <div class="more"><a href="reserve.html" class="btn">立即預約</a></div>
                         </div>
 
                     </div>
@@ -136,7 +203,7 @@
                         <div class="divination-card-text col-12 col-md-6 padding-0  flex-order-1">
                             <h3 class="mb-20">塔羅流年解析</h3>
                             <p class="mb-20">揭示命運軌跡，指導未來之路，讓您迎接新的一年，充滿希望與洞察。</p>
-                            <div class="more"><a href="#" class="btn">立即預約</a></div>
+                            <div class="more"><a href="reserve.html" class="btn">立即預約</a></div>
                         </div>
 
                     </div>
@@ -147,7 +214,7 @@
                         <div class="divination-card-text col-12 col-md-6 padding-0 ">
                             <h3 class="mb-20">生命靈數解析</h3>
                             <p class="mb-20">啟發深刻內省，揭示目的與潛力，引導您走向充實與啟發的生命之旅。</p>
-                            <div class="more"><a href="#" class="btn">立即預約</a></div>
+                            <div class="more"><a href="reserve.html" class="btn">立即預約</a></div>
                         </div>
 
                     </div>
@@ -158,7 +225,7 @@
                         <div class="divination-card-text col-12 col-md-6 padding-0  flex-order-1">
                             <h3 class="mb-20">阿卡西記錄解讀</h3>
                             <p class="mb-20">揭示靈魂的故事、生命目的，提供深刻的靈性洞察和個人成長的機會。</p>
-                            <div class="more"><a href="#" class="btn">立即預約</a></div>
+                            <div class="more"><a href="reserve.html" class="btn">立即預約</a></div>
                         </div>
 
                     </div>
@@ -200,7 +267,7 @@
             <h2 class="mb-60">熱門開運小物</h2>
             <div class="products-list row">
                 <a href="#" class="arrow-prev"><i class="fa-solid fa-chevron-left"></i></a>
-                <a href="#" class="col-12 col-md-4 mb-20">
+                <a href="product_detail.html" class="col-12 col-md-4 mb-20">
                     <div class="card-product">
                         <div class="card-pic"><img src="imgs/product1.jpg" alt="開運手鍊"></div>
                         <div class="card-text">
@@ -211,7 +278,7 @@
                         <button><i class="fa-regular fa-heart"></i></button>
                     </div>
                 </a>
-                <a href="#" class=" col-12 col-md-4 mb-20">
+                <a href="product_detail.html" class=" col-12 col-md-4 mb-20">
                     <div class="card-product">
                         <div class="card-pic"><img src="imgs/product2.jpg" alt="愛情花園蠟燭"></div>
                         <div class="card-text">
@@ -222,7 +289,7 @@
                         <button><i class="fa-regular fa-heart"></i></button>
                     </div>
                 </a>
-                <a href="#" class=" col-12 col-md-4 mb-20">
+                <a href="product_detail.html" class=" col-12 col-md-4 mb-20">
                     <div class="card-product">
                         <div class="card-pic"><img src="imgs/product3.jpg" alt="金錢魔法精油"></div>
                         <div class="card-text">
@@ -236,7 +303,7 @@
                 </a>
                 <a href="#" class="arrow-next"><i class="fa-solid fa-chevron-right"></i></a>
             </div>
-            <div class="more"><a href="#">查看更多</a></div>
+            <div class="more"><a href="products.html">查看更多</a></div>
         </div>
         <div class="recommend mb-80">
             <h2 class="mb-60">好評推薦</h2>
@@ -371,22 +438,22 @@
         <div class="news container mb-80">
             <h2>最新消息</h2>
             <div class="news-article">
-                <a href="#">
+                <a href="news_detail.html">
                     <div class="news-item mb-60">
                         <h3><time class="mr-16">2023/11/08</time> 愛情占卜特惠：洞察愛情之路</h3>
                     </div>
                 </a>
-                <a href="#">
+                <a href="news_detail.html">
                     <div class="news-item mb-60">
                         <h3><time class="mr-16">2023/11/01</time>塔羅專家 Amy 老師的每日占卜</h3>
                     </div>
                 </a>
-                <a href="#">
+                <a href="news_detail.html">
                     <div class="news-item mb-20">
                         <h3><time class="mr-16">2023/10/10</time>免費占卜週：探索你的未來</h3>
                     </div>
                 </a>
-                <div class="read-more"><a href="#">查看更多</a></div>
+                <div class="read-more"><a href="news.html">查看更多</a></div>
             </div>
         </div>
         </div>
@@ -394,7 +461,7 @@
             <h2 class="mb-60">文章專欄</h2>
             <div class="article-list row mb-20">
                 <div class="article-list-big col-12 col-md-6 ">
-                    <a href="#" class="b-card">
+                    <a href="article_detail.html" class="b-card">
                         <div class="list-b-pic mr-8">
                             <img src="imgs/article1.jpg" alt="塔羅占卜">
                         </div>
@@ -406,7 +473,7 @@
                 </div>
                 <div class="article-list-small col-12 col-md-6">
                     <div class="list-s-card  mb-20">
-                        <a href="#" class="s-card">
+                        <a href="article_detail.html" class="s-card">
                             <div class="s-card-pic mr-16">
                                 <img src="imgs/article2.jpg" alt="塔羅占卜的奧秘">
                             </div>
@@ -418,7 +485,7 @@
 
                     </div>
                     <div class="list-s-card">
-                        <a href="#" class="s-card">
+                        <a href="article_detail.html" class="s-card">
                             <div class="s-card-pic mr-16">
                                 <img src="imgs/article3.jpg" alt="學習塔羅占卜">
                             </div>
@@ -430,7 +497,7 @@
                     </div>
                 </div>
             </div>
-            <div class="more"><a href="#">查看更多</a></div>
+            <div class="more"><a href="article.html">查看更多</a></div>
         </div>
     </main>
     <footer>
@@ -438,10 +505,10 @@
             <div class="about-list">
                 <h2 class="mb-8">關於</h2>
                 <ul>
-                    <li class="mb-8"><a href="#">品牌故事</a></li>
+                    <li class="mb-8"><a href="about_us.html">品牌故事</a></li>
                     <li class="mb-8"><a href="team.html">團隊介紹</a></li>
                     <li class="mb-8"><a href="news.html">最新消息</a></li>
-                    <li class="mb-8"><a href="#">常見問題</a></li>
+                    <li class="mb-8"><a href="faq.html">常見問題</a></li>
                 </ul>
             </div>
             <div class="service-lise">
@@ -451,7 +518,7 @@
                     <li class="mb-8"><a href="reserve.html">預約占卜</a></li>
                     <li class="mb-8"><a href="products.html">魔法小舖</a></li>
                     <li class="mb-8"><a href="pick_card_online.html">線上抽牌</a></li>
-                    <li class="mb-8"><a href="#">文章專欄</a></li>
+                    <li class="mb-8"><a href="article.html">文章專欄</a></li>
                 </ul>
             </div>
             <div class="follow-us">
@@ -475,6 +542,7 @@
 
         <div class="copyright">
             <p>COPYRIGHT © 2023 三眼貓塔羅 All rights reserved.</p>
+            <p>本網站為緯育TibaMe前端工程師專業技術養成班第88期學員專題作品，本平台僅供學習、展示之用。</p>
         </div>
     </footer>
 </body>
