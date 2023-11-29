@@ -1301,7 +1301,7 @@ footer .footer-area h2 {
   border: 1px solid #cacaca;
   display: flex;
   flex-direction: column;
-  animation: marquee-card 60s linear infinite;
+  animation: marquee-card 80s linear infinite;
 }
 .recommend-row-top .rec-card .rec-card-text,
 .recommend-row-bottom .rec-card .rec-card-text {
@@ -1322,7 +1322,7 @@ footer .footer-area h2 {
 }
 
 .recommend .recommend-row-bottom .marquee2 {
-  animation: marquee-card-reverse 60s linear infinite;
+  animation: marquee-card-reverse 80s linear infinite;
 }
 
 .news {
