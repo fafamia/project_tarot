@@ -1430,6 +1430,7 @@ footer .footer-area h2 {
 .divination-card-p .divination-card-text-p .more a {
   color: #fff;
   font-size: 24px;
+  padding: 10px 40px;
 }
 
 .reserve-pic .reserve-pic-large {
@@ -2094,6 +2095,9 @@ footer .footer-area h2 {
 .table .table-icon {
   text-align: center;
   font-size: 20px;
+}
+.table .table-icon a:hover {
+  color: #AE3257;
 }
 .table .table-icon .heart-line {
   margin-right: 24px;
