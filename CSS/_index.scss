@@ -1,3 +1,43 @@
+@keyframes down {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 20px);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes turn-right {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 10deg;
+    }
+}
+
+@keyframes turn-left {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: -10deg;
+    }
+}
+
 .banner {
     background-image: url(../imgs/banner.png);
     height: 580px;
@@ -23,30 +63,35 @@
         position: absolute;
         bottom: 0;
         left: -310px;
+        animation: turn-right 3s linear infinite alternate;
     }
 
     .right-hand {
         position: absolute;
         bottom: 0;
         right: -300px;
+        animation: turn-left 3s linear infinite alternate;
     }
 
     .banner-card1 {
         position: absolute;
         bottom: 10%;
         left: 32%;
+        animation: down 2s linear infinite alternate;
     }
 
     .banner-card2 {
         position: absolute;
         bottom: 20px;
         left: 45%;
+        animation: up 2s linear infinite alternate;
     }
 
     .banner-card3 {
         position: absolute;
         bottom: 5%;
         left: 57%;
+        animation: down 2s linear infinite alternate;
     }
 
 }
@@ -435,6 +480,26 @@
     }
 }
 
+@keyframes marquee-card {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-1000%);
+    }
+}
+
+@keyframes marquee-card-reverse {
+    0% {
+        transform: translateX(-1000%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 .recommend-row-top,
 .recommend-row-bottom {
     gap: 0 22px;
@@ -454,6 +519,7 @@
         border: 1px solid $color-lightgray;
         display: flex;
         flex-direction: column;
+        animation: marquee-card 60s linear infinite;
 
         .rec-card-text {
             flex-grow: 1;
@@ -471,6 +537,14 @@
                 font-weight: bold;
                 font-size: $text-m;
             }
+        }
+    }
+}
+
+.recommend {
+    .recommend-row-bottom {
+        .marquee2 {
+            animation: marquee-card-reverse 60s linear infinite;
         }
     }
 }
