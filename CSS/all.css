@@ -2128,11 +2128,14 @@ footer .footer-area h2 {
   width: 100%;
   display: flex;
 }
-.table .table-item a {
-  display: block;
-  color: #AE3257;
+.table .table-item .shopping-checkbox {
   width: 5%;
   text-align: center;
+}
+.table .table-item .shopping-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #AE3257;
 }
 .table .table-item .table-img {
   width: 35%;

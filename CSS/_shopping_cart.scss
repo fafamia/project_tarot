@@ -45,12 +45,18 @@
         width: 100%;
         display: flex;
 
-        a {
-            display: block;
-            color: $color-primary;
+        .shopping-checkbox {
             width: 5%;
             text-align: center;
+
+            input {
+                width: 16px;
+                height: 16px;
+                accent-color: $color-primary;
+            }
         }
+
+
 
         .table-img {
             width: 35%;
