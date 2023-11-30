@@ -912,12 +912,12 @@ footer .footer-area h2 {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .loading .cat-img img {
   width: 150px;
   position: relative;
   animation: movingUp 0.5s 0.5s infinite alternate;
-  transform: translate(-50%, -50%);
 }
 
 @keyframes down {

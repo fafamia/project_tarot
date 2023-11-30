@@ -21,12 +21,12 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
 
         img {
             width: 150px;
             position: relative;
             animation: movingUp 0.5s .5s infinite alternate;
-            transform: translate(-50%, -50%);
         }
     }
 }
