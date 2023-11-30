@@ -923,7 +923,7 @@ footer .footer-area h2 {
     rotate: -10deg;
   }
 }
-.banner {
+.banner-bg {
   background-image: url(../imgs/banner.png);
   height: 580px;
   padding-top: 150px;
@@ -931,41 +931,44 @@ footer .footer-area h2 {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-.banner .banner-text {
+.banner-bg .banner {
+  overflow: hidden;
+}
+.banner-bg .banner .banner-text {
   color: #fff;
   text-align: center;
 }
-.banner .banner-text p {
+.banner-bg .banner .banner-text p {
   font-size: 48px;
 }
-.banner .banner-text h2 {
+.banner-bg .banner .banner-text h2 {
   font-size: 32px;
 }
-.banner .left-hand {
+.banner-bg .banner .left-hand {
   position: absolute;
   bottom: 0;
   left: -310px;
   animation: turn-right 3s linear infinite alternate;
 }
-.banner .right-hand {
-  position: absolute;
-  bottom: 0;
-  right: -300px;
+.banner-bg .banner .right-hand {
+  float: right;
+  margin-right: -340px;
+  margin-top: 50px;
   animation: turn-left 3s linear infinite alternate;
 }
-.banner .banner-card1 {
+.banner-bg .banner .banner-card1 {
   position: absolute;
   bottom: 10%;
   left: 32%;
   animation: down 2s linear infinite alternate;
 }
-.banner .banner-card2 {
+.banner-bg .banner .banner-card2 {
   position: absolute;
   bottom: 20px;
   left: 45%;
   animation: up 2s linear infinite alternate;
 }
-.banner .banner-card3 {
+.banner-bg .banner .banner-card3 {
   position: absolute;
   bottom: 5%;
   left: 57%;
@@ -1031,6 +1034,7 @@ footer .footer-area h2 {
   text-align: center;
   padding-bottom: 100px;
   position: relative;
+  overflow: hidden;
 }
 .divination .diviation-bg {
   background-color: rgba(222, 197, 223, 0.8);

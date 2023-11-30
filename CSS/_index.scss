@@ -38,7 +38,7 @@
     }
 }
 
-.banner {
+.banner-bg {
     background-image: url(../imgs/banner.png);
     height: 580px;
     padding-top: 150px;
@@ -46,53 +46,61 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-    .banner-text {
-        color: #fff;
-        text-align: center;
+    .banner {
+        overflow: hidden;
 
-        p {
-            font-size: $text-title;
+        .banner-text {
+            color: #fff;
+            text-align: center;
+
+            p {
+                font-size: $text-title;
+            }
+
+            h2 {
+                font-size: $text-xl;
+            }
         }
 
-        h2 {
-            font-size: $text-xl;
+        .left-hand {
+            position: absolute;
+            bottom: 0;
+            left: -310px;
+            animation: turn-right 3s linear infinite alternate;
+        }
+
+        .right-hand {
+            // position: absolute;
+            // bottom: 0;
+            // right: -300px;
+            float: right;
+            margin-right: -340px;
+            margin-top: 50px;
+            animation: turn-left 3s linear infinite alternate;
+        }
+
+        .banner-card1 {
+            position: absolute;
+            bottom: 10%;
+            left: 32%;
+            animation: down 2s linear infinite alternate;
+        }
+
+        .banner-card2 {
+            position: absolute;
+            bottom: 20px;
+            left: 45%;
+            animation: up 2s linear infinite alternate;
+        }
+
+        .banner-card3 {
+            position: absolute;
+            bottom: 5%;
+            left: 57%;
+            animation: down 2s linear infinite alternate;
         }
     }
 
-    .left-hand {
-        position: absolute;
-        bottom: 0;
-        left: -310px;
-        animation: turn-right 3s linear infinite alternate;
-    }
-
-    .right-hand {
-        position: absolute;
-        bottom: 0;
-        right: -300px;
-        animation: turn-left 3s linear infinite alternate;
-    }
-
-    .banner-card1 {
-        position: absolute;
-        bottom: 10%;
-        left: 32%;
-        animation: down 2s linear infinite alternate;
-    }
-
-    .banner-card2 {
-        position: absolute;
-        bottom: 20px;
-        left: 45%;
-        animation: up 2s linear infinite alternate;
-    }
-
-    .banner-card3 {
-        position: absolute;
-        bottom: 5%;
-        left: 57%;
-        animation: down 2s linear infinite alternate;
-    }
 
 }
 
@@ -173,6 +181,7 @@
     // background-repeat: no-repeat;
     padding-bottom: 100px;
     position: relative;
+    overflow: hidden;
 
     .diviation-bg {
         background-color: rgba(222, 197, 223, 0.80);
