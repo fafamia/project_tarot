@@ -14,9 +14,17 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="CSS/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
+    <div class="loading">
+        <div class="cat-img">
+            <img src="imgs/cat.png" alt="">
+        </div>
+    </div>
     <header>
         <input type="checkbox" id="login">
         <input type="checkbox" id="signup">
@@ -1161,6 +1169,11 @@
             <p>本網站為緯育TibaMe前端工程師專業技術養成班第88期學員專題作品，本平台僅供學習、展示之用。</p>
         </div>
     </footer>
+    <script>$(document).ready(function () {
+            setTimeout(function () {
+                $(".loading").fadeOut(300);
+            }, 2500);
+        });</script>
 </body>
 
 </html>
