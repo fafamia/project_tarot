@@ -837,7 +837,7 @@ footer .footer-area h2 {
   width: 100%;
   text-align: right;
 }
-.sub-news .submit-email a {
+.sub-news .submit-email input {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
@@ -847,8 +847,10 @@ footer .footer-area h2 {
   border: 2px solid #AE3257;
   border-radius: 0.3rem;
   padding: 0.375rem 0.75rem;
+  background-color: transparent;
+  cursor: pointer;
 }
-.sub-news .submit-email a:hover {
+.sub-news .submit-email input:hover {
   background-color: #AE3257;
   color: #fff;
 }
@@ -1656,6 +1658,15 @@ footer .footer-area h2 {
   font-size: 20px;
   width: 50%;
 }
+.reserve-btn input {
+  font-size: 20px;
+  width: 50%;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
 .reserve-btn .add-cart {
   padding: 0.5rem 0.75rem;
   text-align: center;
@@ -1821,7 +1832,8 @@ footer .footer-area h2 {
   display: flex;
   justify-content: space-between;
 }
-.detail-text .detail-btn a {
+.detail-text .detail-btn a,
+.detail-text .detail-btn input {
   border-radius: 5px;
   padding: 0.75rem 40px;
   display: inline-block;
@@ -1836,6 +1848,11 @@ footer .footer-area h2 {
 }
 .detail-text .detail-btn .order-now {
   color: #fff;
+  font-size: 24px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
 }
 
 .desciption-product h2 {
@@ -2336,15 +2353,21 @@ footer .footer-area h2 {
   padding-bottom: 12px;
   border-bottom: 1px dashed #cacaca;
 }
-.price-area a {
+.price-area input {
   display: block;
   text-align: center;
   background-color: #AE3257;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
 }
-.price-area a:hover {
+.price-area input:hover {
   background-color: #862743;
 }
 

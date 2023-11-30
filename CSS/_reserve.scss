@@ -164,8 +164,17 @@
 
     a {
         font-size: $text-s;
-        // display: inline-block;
         width: 50%;
+    }
+
+    input {
+        font-size: $text-s;
+        width: 50%;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
     }
 
     .add-cart {
