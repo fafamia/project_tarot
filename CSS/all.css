@@ -638,7 +638,8 @@ header .header .logo img {
   width: 60px;
   height: 60px;
 }
-header .header .logo h1 {
+header .header .logo h1,
+header .header .logo h2 {
   font-size: 24px;
 }
 
