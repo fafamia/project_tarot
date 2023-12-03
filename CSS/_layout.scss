@@ -197,18 +197,32 @@ header {
 
 
 footer {
-    background-color: $color-secondary;
+    background-image: url(../imgs/footer-bg1.png);
+    background-size: cover;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
 
     .footer-area {
         display: flex;
-        justify-content: space-between;
-        padding: 48px 0;
+        padding: 10px 0;
 
         h2 {
-            font-size: $text-m;
+            font-size: 16px;
+            margin-bottom: 8px;
         }
+    }
 
+    .copyright {
+        border-top: 1px solid $color-gray;
+        text-align: center;
+        padding: 5px;
 
+        p {
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0;
+        }
     }
 }
 
@@ -216,10 +230,10 @@ footer {
     flex: 1 1 0%;
 
     a {
-        font-size: $text-s;
+        color: #fff;
 
         &:hover {
-            color: $color-primary;
+            color: $light-primary;
         }
     }
 }
@@ -228,10 +242,10 @@ footer {
     flex: 1 1 0%;
 
     a {
-        font-size: $text-s;
+        color: #fff;
 
         &:hover {
-            color: $color-primary;
+            color: $light-primary;
         }
     }
 }
@@ -240,59 +254,66 @@ footer {
     flex: 1.3 1 0%;
 
     .social-app {
+        display: flex;
+        align-items: center;
 
-        img {
-            width: 50px;
-            height: 50px;
+        a {
+            font-size: 30px;
+            display: block;
+            color: #fff;
+
+            &:hover {
+                color: $light-primary;
+            }
+        }
+
+        .line {
+            font-size: 26px;
         }
     }
 }
 
 .sub-news {
     flex: 1.3 1 0%;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
-    input {
-        max-width: 100%;
-        padding: 12px 10px;
-        border-radius: 0.3rem;
-        border: 1px solid $color-gray;
-        outline: none;
-    }
+    .sub-input {
+        display: flex;
 
-    .submit-email {
-        width: 100%;
-        text-align: right;
+        input[type="text"] {
+            width: 90%;
+            padding: 4px 10px;
+            border-radius: 5px 0 0 5px;
+            border: 2px solid #fff;
+            outline: none;
+            border-right: none;
 
-        input {
+        }
+
+        input[type="submit"] {
+            width: 10%;
             display: inline-block;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
             width: 80px;
-            color: $color-primary;
-            border: 2px solid $color-primary;
-            border-radius: 0.3rem;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 0 5px 5px 0;
             padding: 0.375rem 0.75rem;
             background-color: transparent;
             cursor: pointer;
 
             &:hover {
-                background-color: $color-primary;
-                color: #fff;
+                background-color: $light-primary;
+                border: 2px solid $light-primary;
             }
         }
     }
-
 }
 
-.copyright {
-    border-top: 1px solid $color-gray;
-    text-align: center;
-    padding: 5px;
-    font-size: 14px;
-}
+
 
 .banner-title {
     background-image: url(../imgs/pages_title_bg.jpg);

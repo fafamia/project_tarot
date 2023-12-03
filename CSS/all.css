@@ -484,6 +484,10 @@ a {
   background-color: #862743;
 }
 
+.mb-4 {
+  margin-bottom: 4px;
+}
+
 .mb-8 {
   margin-bottom: 8px;
 }
@@ -783,84 +787,101 @@ header .header .logo h2 {
 }
 
 footer {
-  background-color: #DEC5DF;
+  background-image: url(../imgs/footer-bg1.png);
+  background-size: cover;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
 }
 footer .footer-area {
   display: flex;
-  justify-content: space-between;
-  padding: 48px 0;
+  padding: 10px 0;
 }
 footer .footer-area h2 {
-  font-size: 24px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+footer .copyright {
+  border-top: 1px solid #898989;
+  text-align: center;
+  padding: 5px;
+}
+footer .copyright p {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .about-list {
   flex: 1 1 0%;
 }
 .about-list a {
-  font-size: 20px;
+  color: #fff;
 }
 .about-list a:hover {
-  color: #AE3257;
+  color: #dc849e;
 }
 
 .service-lise {
   flex: 1 1 0%;
 }
 .service-lise a {
-  font-size: 20px;
+  color: #fff;
 }
 .service-lise a:hover {
-  color: #AE3257;
+  color: #dc849e;
 }
 
 .follow-us {
   flex: 1.3 1 0%;
 }
-.follow-us .social-app img {
-  width: 50px;
-  height: 50px;
+.follow-us .social-app {
+  display: flex;
+  align-items: center;
+}
+.follow-us .social-app a {
+  font-size: 30px;
+  display: block;
+  color: #fff;
+}
+.follow-us .social-app a:hover {
+  color: #dc849e;
+}
+.follow-us .social-app .line {
+  font-size: 26px;
 }
 
 .sub-news {
   flex: 1.3 1 0%;
+}
+.sub-news .sub-input {
   display: flex;
-  flex-direction: column;
 }
-.sub-news input {
-  max-width: 100%;
-  padding: 12px 10px;
-  border-radius: 0.3rem;
-  border: 1px solid #898989;
+.sub-news .sub-input input[type=text] {
+  width: 90%;
+  padding: 4px 10px;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #fff;
   outline: none;
+  border-right: none;
 }
-.sub-news .submit-email {
-  width: 100%;
-  text-align: right;
-}
-.sub-news .submit-email input {
+.sub-news .sub-input input[type=submit] {
+  width: 10%;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   width: 80px;
-  color: #AE3257;
-  border: 2px solid #AE3257;
-  border-radius: 0.3rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0 5px 5px 0;
   padding: 0.375rem 0.75rem;
   background-color: transparent;
   cursor: pointer;
 }
-.sub-news .submit-email input:hover {
-  background-color: #AE3257;
-  color: #fff;
-}
-
-.copyright {
-  border-top: 1px solid #898989;
-  text-align: center;
-  padding: 5px;
-  font-size: 14px;
+.sub-news .sub-input input[type=submit]:hover {
+  background-color: #dc849e;
+  border: 2px solid #dc849e;
 }
 
 .banner-title {
