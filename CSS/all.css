@@ -443,6 +443,7 @@ body {
   letter-spacing: 0.1rem;
   font-family: "Roboto", "Noto Sans TC", sans-serif;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -1004,9 +1005,9 @@ footer .copyright p {
   animation: turn-right 3s linear infinite alternate;
 }
 .banner-bg .banner .right-hand {
-  float: right;
-  margin-right: -340px;
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  right: -300px;
   animation: turn-left 3s linear infinite alternate;
 }
 .banner-bg .banner .banner-card1 {
@@ -1312,7 +1313,10 @@ footer .copyright p {
 }
 
 .recommend {
-  background-image: url(../imgs/wall4.webp);
+  background-image: url(../imgs/recommend_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 60px;
   padding-bottom: 40px;
   text-align: center;
@@ -1320,6 +1324,7 @@ footer .copyright p {
 }
 .recommend h2 {
   font-size: 48px;
+  color: #fff;
 }
 
 @keyframes marquee-card {

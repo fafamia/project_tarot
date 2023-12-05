@@ -103,12 +103,12 @@
         }
 
         .right-hand {
-            // position: absolute;
-            // bottom: 0;
-            // right: -300px;
-            float: right;
-            margin-right: -340px;
-            margin-top: 50px;
+            position: absolute;
+            bottom: 0;
+            right: -300px;
+            // float: right;
+            // margin-right: -340px;
+            // margin-top: 50px;
             animation: turn-left 3s linear infinite alternate;
         }
 
@@ -511,7 +511,10 @@
 }
 
 .recommend {
-    background-image: url(../imgs/wall4.webp);
+    background-image: url(../imgs/recommend_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 60px;
     padding-bottom: 40px;
     text-align: center;
@@ -519,6 +522,7 @@
 
     h2 {
         font-size: $text-title;
+        color: #fff;
     }
 }
 
